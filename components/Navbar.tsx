@@ -1,41 +1,29 @@
-"use client";
-
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white border-b border-gray-200">
+    <header className="navbar">
+      <div className="nav-container">
 
-      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        
-        <h1 className="text-2xl font-bold text-primary">
-          Novoz Infinity
-        </h1>
+        {/* BRAND */}
+        <Link href="/" className="brand">
+          <img
+            src="/images/logo.png"
+            alt="Novoz Infinity Logo"
+            className="logo-img"
+          />
+          <span className="brand-text">Novoz Infinity</span>
+        </Link>
 
-        <ul className="flex gap-8 list-none text-gray-700 font-medium">
-          <li>
-            <Link href="/" className="hover:text-primary transition">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-primary transition">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="/services" className="hover:text-primary transition">
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-primary transition">
-              Contact
-            </Link>
-          </li>
-        </ul>
+        {/* NAV LINKS */}
+        <nav className="nav-links">
+          <Link href="/" className="nav-link active">Home</Link>
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/services" className="nav-link">Services</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
+        </nav>
 
       </div>
-    </nav>
+    </header>
   );
 }

@@ -1,107 +1,131 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      {/* HERO SECTION */}
-      <section className="min-h-[85vh] flex items-center bg-gradient-to-b from-primary-light to-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold text-primary mb-6">
-            Building Scalable Software & SaaS Solutions
-          </h1>
+  <section className="hero hero-image-bg">
+  {/* Dark overlay for readability */}
+  <div className="hero-overlay"></div>
 
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Novoz Infinity is a technology-driven company specializing in custom
-            software development and SaaS product development. We help
-            businesses and startups turn ideas into reliable, scalable, and
-            modern digital solutions.
-          </p>
+  {/* Content */}
+  <div className="hero-content">
+    <h1>
+      Novoz Infinity builds scalable software and SaaS products that help
+      businesses grow sustainably.
+    </h1>
 
-          {/* CTA BUTTONS */}
-          <div className="flex justify-center gap-6 mt-10">
-           
+    <p>
+      We design, develop, and deploy modern software solutions and SaaS
+      platforms for startups and enterprises.
+    </p>
 
-            <Link
-              href="/contact"
-              className="px-10 py-3 border-2 border-primary text-primary rounded-xl
-                         hover:bg-primary hover:text-white transition font-medium"
-            >
-              Get in Touch
-            </Link>
+    <div className="hero-actions">
+      <a href="/book-demo" className="btn primary">Book a Demo</a>
+      <a href="/talk-to-experts" className="btn">Talk to Experts</a>
+    </div>
+  </div>
+</section>
+
+
+
+      {/* WHAT WE DO */}
+   <section className="what-we-do">
+  <div className="what-header reveal">
+    <h2>What We Do</h2>
+    <p>
+      Novoz Infinity builds modern SaaS platforms and custom software solutions
+      that solve real business problems and scale with growth.
+    </p>
+  </div>
+
+  <div className="what-grid">
+    <div className="what-card reveal">
+      <h3>SaaS Platforms</h3>
+      <p>
+        We design and build scalable SaaS products with modern architecture,
+        cloud readiness, and security-first approach.
+      </p>
+    </div>
+
+    <div className="what-card reveal">
+      <h3>Custom Software</h3>
+      <p>
+        Tailor-made software solutions aligned exactly to your business needs
+        and workflows.
+      </p>
+    </div>
+
+    <div className="what-card reveal">
+      <h3>Product Engineering</h3>
+      <p>
+        From idea validation to production-ready systems, we engineer products
+        built to scale.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+      {/* CORE OFFERINGS */}
+      <section className="services">
+        <h2 className="reveal">Our Core Offerings</h2>
+
+        <div className="service-grid">
+          <div className="service-card reveal">
+            <h3>SaaS Products</h3>
+            <p>
+              Ready-to-deploy platforms like <strong>WAVOZ</strong> for
+              automation and CRM.
+            </p>
+          </div>
+
+          <div className="service-card reveal">
+            <h3>Custom Software Development</h3>
+            <p>Tailored solutions built specifically for your business.</p>
+          </div>
+
+          <div className="service-card reveal">
+            <h3>Product Engineering</h3>
+            <p>From idea to scalable, production-ready products.</p>
+          </div>
+
+          <div className="service-card reveal">
+            <h3>Automation & Integrations</h3>
+            <p>Reduce manual work and increase operational efficiency.</p>
           </div>
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-primary mb-6">
-            Who We Are
-          </h2>
+      {/* WHY NOVOZ */}
+<section className="why-novoz reveal">
+  <h2>Why Novoz Infinity</h2>
 
-          <p className="text-gray-700 max-w-4xl mx-auto">
-            At Novoz Infinity, we focus on delivering high-quality software
-            solutions that align with business goals. Our team combines
-            technical expertise with modern architectures to build products
-            that scale with your growth.
-          </p>
-        </div>
-      </section>
+  <div className="why-grid">
+    <div className="why-card">
+      <h3>Product-First Mindset</h3>
+      <p>We focus on building products, not just delivering projects.</p>
+    </div>
 
-      {/* SERVICES SECTION */}
-      <section className="bg-primary-light py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-primary text-center mb-14">
-            Our Services
-          </h2>
+    <div className="why-card">
+      <h3>Built for Scale</h3>
+      <p>Architected for performance, security, and future growth.</p>
+    </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition">
-              <h3 className="text-2xl font-semibold text-primary mb-4">
-                Custom Software Development
-              </h3>
-              <p className="text-gray-700">
-                We build secure, scalable, and high-performance software
-                tailored to your business requirements.
-              </p>
-            </div>
+    <div className="why-card">
+      <h3>Business-Centric Engineering</h3>
+      <p>Technology decisions aligned with real business outcomes.</p>
+    </div>
 
-            <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition">
-              <h3 className="text-2xl font-semibold text-primary mb-4">
-                SaaS Product Development
-              </h3>
-              <p className="text-gray-700">
-                From idea to launch, we help you design, develop, and scale
-                successful SaaS products.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="why-card">
+      <h3>Long-Term Partner</h3>
+      <p>We grow with you beyond launch and delivery.</p>
+    </div>
+  </div>
+</section>
 
-      {/* WHY CHOOSE US */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-primary mb-10">
-            Why Choose Novoz Infinity
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-8 text-gray-700">
-            <div className="bg-primary-light rounded-xl p-6">
-              Modern Technology Stack
-            </div>
-            <div className="bg-primary-light rounded-xl p-6">
-              Scalable & Secure Solutions
-            </div>
-            <div className="bg-primary-light rounded-xl p-6">
-              Client-Centric Approach
-            </div>
-            <div className="bg-primary-light rounded-xl p-6">
-              Quality & Reliability
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

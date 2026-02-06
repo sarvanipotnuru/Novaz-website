@@ -1,60 +1,55 @@
 export default function Services() {
   return (
-    <main className="min-h-screen bg-primary-light py-24">
-      <div className="max-w-6xl mx-auto px-6">
+    <main className="services-page">
+      {/* Header */}
+      <section className="services-hero reveal">
+        <h1>Our Services</h1>
+        <p>
+          Novoz Infinity specializes in building scalable software solutions
+          and SaaS products that help businesses streamline operations,
+          improve efficiency, and support long-term growth.
+        </p>
+      </section>
 
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-primary mb-4">
-            Our Services
-          </h1>
-          <p className="text-gray-700 max-w-3xl mx-auto">
-            We specialize in building scalable, secure, and high-performance
-            software solutions tailored to business needs.
+      {/* Services */}
+      <section className="services-section">
+        {/* Custom Software Development */}
+        <div className="service-card reveal">
+          <h2>Custom Software Development</h2>
+          <p>
+            We design and develop custom software solutions tailored to the
+            unique requirements of each business. Our focus is on delivering
+            reliable, secure, and scalable applications that align with
+            organizational goals.
           </p>
+
+          <ul>
+            <li>Requirement analysis and solution planning</li>
+            <li>Custom application design and development</li>
+            <li>Scalable and secure system architecture</li>
+            <li>Testing, deployment, and maintenance</li>
+            <li>Ongoing support and enhancements</li>
+          </ul>
         </div>
 
-        {/* Services Cards */}
-        <div className="grid md:grid-cols-2 gap-10">
+        {/* SaaS Product Development */}
+        <div className="service-card reveal">
+          <h2>SaaS Product Development</h2>
+          <p>
+            We help businesses and startups build end-to-end SaaS products,
+            from concept to deployment. Our SaaS solutions are designed for
+            scalability, performance, and ease of use.
+          </p>
 
-          {/* Card 1 */}
-          <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-primary mb-4">
-              Custom Software Development
-            </h2>
-            <p className="text-gray-700 mb-4">
-              We design and develop custom software solutions tailored to your
-              specific business requirements, ensuring scalability, security,
-              and performance.
-            </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Business-specific software solutions</li>
-              <li>Scalable and secure architecture</li>
-              <li>Web & enterprise applications</li>
-              <li>Ongoing support and maintenance</li>
-            </ul>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-primary mb-4">
-              SaaS Product Development
-            </h2>
-            <p className="text-gray-700 mb-4">
-              From idea to launch, we help you build robust SaaS products with
-              modern technology, optimized for growth and user experience.
-            </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>End-to-end SaaS product development</li>
-              <li>Cloud-based and multi-tenant solutions</li>
-              <li>Scalable subscription models</li>
-              <li>Continuous improvements & scaling</li>
-            </ul>
-          </div>
-
+          <ul>
+            <li>Product ideation and technical architecture</li>
+            <li>Multi-tenant SaaS application development</li>
+            <li>Subscription-based and role-based systems</li>
+            <li>Cloud-ready and scalable infrastructure</li>
+            <li>Continuous improvement and product scaling</li>
+          </ul>
         </div>
-
-      </div>
+      </section>
     </main>
   );
 }
